@@ -81,7 +81,6 @@ nav ul {
     max-width: 100%;
     list-style:none;
     grid-template-columns:repeat(4,1fr);
-    place-content:space-between;
 }
 
 nav ul li 
