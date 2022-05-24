@@ -1,13 +1,24 @@
-body {
-    margin: 50px 50px;
+*
+{
+margin:0px;
+padding:0px;
 }
+body 
+  {
+    display:grid;
+    place-items:center;
+    place-content:center;
+    min-height:100vh;
+   }
 
 
-h2 {
+h1
+  {
     color:violet;
     text-align: center;
     font-size: 60px;
-}
+  }
+  
 .container
 
 {
@@ -18,8 +29,8 @@ display:grid;
 grid-template-columns: repeat(3,1fr);
 grid-template-rows: [row1-start]15% [row2-start] auto [row3-start]auto [row4-start]10%;
 grid-template-areas: 'hd hd hd hd'
-                    'sd art art art'
-                    'foo foo foo foo';
+                     'sd art art art'
+                     'foo foo foo foo';
                     font-size: 30px;
                     color:rgba(30, 21, 2, 0.973);
                     font-style: italic;
@@ -38,12 +49,11 @@ nav,footer,article,aside
 {
     border:2px solid gray;
     display: flex;
-   align-items: center;
+    align-items: center;
     justify-content:center;
     grid-row-start: span row4-start;
     grid-row-end:5;
     
-
 }
 
 nav{
@@ -81,7 +91,6 @@ nav ul li
 }
 
 nav ul li:last-of-type {
-
     border-right: none;;
 }
 nav ul li:hover {
@@ -96,20 +105,18 @@ aside {
     background:linear-gradient(150deg, rgb(221, 61, 114),white);
 
 }
-article {
+article 
+    {
     grid-area:art;
     grid-row: 2 / 5;
     background:linear-gradient(150deg, rgb(241, 26, 141),rgba(255, 255, 255, 0.517));
-
-}
+     }
 
 footer{
     grid-area: foo;
     grid-row-start: 4;
     grid-row-end: 5;
-
    /* grid-column: 8 / 9;*/
-   
     background:linear-gradient(150deg, rgb(126, 188, 209),white);
 
 }
