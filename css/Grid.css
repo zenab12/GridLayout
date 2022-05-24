@@ -52,7 +52,7 @@ grid-template-columns: repeat(4,1fr);
 grid-template-areas: 'hd hd hd hd'
                      'sd art art art'
                      'foo foo foo foo';
-max-height:min(500px,auto);
+min-height:500px;
 border-radius:10px;
 border:10px dashed var(--main-color);
 /*-grid-template-columns: [first]50px  [line2]auto [line3]auto [line4]50px;*/
