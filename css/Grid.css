@@ -9,32 +9,33 @@ body
     place-items:center;
     place-content:center;
     min-height:100vh;
+    text-align:center;
    }
 
 
 h1
   {
     color:violet;
-    text-align: center;
     font-size: 60px;
+    margin:40px auto;
   }
   
 .container
-
 {
-height: 500px;
-border:2px solid violet;
+border:10px dashed violet;
 display:grid;
 /*grid-template-columns: [first]50px  [line2]auto [line3]auto [line4]50px;*/
-grid-template-columns: repeat(3,1fr);
+/*
 grid-template-rows: [row1-start]15% [row2-start] auto [row3-start]auto [row4-start]10%;
+*/
+grid-template-columns: repeat(4,1fr);
 grid-template-areas: 'hd hd hd hd'
                      'sd art art art'
                      'foo foo foo foo';
-                    font-size: 30px;
-                    color:rgba(30, 21, 2, 0.973);
-                    font-style: italic;
-                    font-weight: bold;
+font-size: 30px;
+color:rgba(30, 21, 2, 0.973);
+font-style: italic;
+font-weight: bold;
 justify-items: stretch;/*default  value*/
 align-items: stretch;
 justify-content: stretch;
@@ -47,8 +48,8 @@ overflow:scroll;
 
 nav,footer,article,aside 
 {
-    border:2px solid gray;
-    display: flex;
+    border:5px solid gray;
+    display: grid;
     align-items: center;
     justify-content:center;
     grid-row-start: span row4-start;
@@ -67,24 +68,19 @@ nav{
 
 }
 nav ul {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content:space-between;
+    grid-template-columns:repeat(4,1fr);
 }
 
 nav ul li 
 {      
     justify-content:space-between;
     list-style-type: none;
-    flex:  auto;
     background-color: white;
-    display:inline-block;
     padding:10px;
     cursor: pointer;
-    text-align:center;
     border-right: 2px solid pink;
 
 
