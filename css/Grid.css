@@ -75,6 +75,7 @@ nav{
 }
 nav ul {
     max-width: 100%;
+    list-style:none;
     grid-template-columns:repeat(4,1fr);
     place-content:space-between;
 }
@@ -93,7 +94,6 @@ nav ul li:last-of-type {
 nav ul li:hover {
     color:#fff;
     background: repeating-linear-gradient(358deg,var(--alternative-color),var(--main-color) 2px);
-    color: #fff;
     mix-blend-mode: hard-light;
 }
 
