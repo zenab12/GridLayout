@@ -23,7 +23,7 @@ body
     font-family:var(--font-family);
    }
 
-body,.container,nav,,aside,article,footer,nav ul
+body,.container,nav,aside,article,footer,nav ul
 {
     display:var(--layout);
     place-items:var(--place-items-center);
